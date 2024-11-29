@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Main Layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+    margin: auto;
+    max-width: 1000px;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, rgb(224, 229, 182), rgb(204, 213, 174));
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: rgb(224, 229, 182);
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #6a11cb;
+  }
+  
+  /* Sections */
+  section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: rgb(204, 213, 174);
+    border-bottom: 2px solid rgb(224, 229, 182);
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* About Section */
+  .about p {
+    text-align: justify;
+  }
+  
+  /* Skills Section */
+  .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .skills li {
+    background: rgb(204, 213, 174);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    list-style: none;
+  }
+  
+  /* Hobbies Section */
+  .hobbies ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .hobbies li {
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(250, 237, 206);
+    color: white;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .skills ul, .hobbies ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
